@@ -2,7 +2,7 @@
 
 ## 1. Abrir no Codex
 
-Abra/adicone um projeto local e selecione `F:\TI\Projetos\portfolio-gabriel-antunes`. Use essa mesma pasta no VS Code e no GitHub Desktop. Não é necessário criar outro repositório ou clonar novamente.
+Abra/adicione um projeto local e selecione `F:\TI\Projetos\portfolio-gabriel-antunes`. Use essa mesma pasta no VS Code e no GitHub Desktop. Não é necessário criar outro repositório ou clonar novamente.
 
 Uma tarefa aberta no projeto OPERAÇÕES não fica automaticamente vinculada à pasta do portfólio. Nas próximas tarefas, escolha o projeto local do portfólio.
 
@@ -33,7 +33,7 @@ Abra `index.html` no navegador; atualize a página depois das edições. Confira
 - Tema claro e escuro, leitura dos textos e botões.
 - Janela larga e estreita, sem texto cortado ou rolagem horizontal indevida.
 - Links profissionais e imagens.
-- Formulário vazio, e-mail inválido e campos válidos. Atualmente ele apenas simula envio.
+- Links de e-mail e WhatsApp com destinatários corretos. Não é necessário enviar mensagens durante o teste.
 
 No terminal, com Node.js instalado, verifique também a sintaxe:
 
@@ -43,7 +43,7 @@ git diff --check
 git diff
 ```
 
-Esses comandos não substituem o teste visual nem comprovam o envio do formulário. Se o site passar a usar recursos que exigem servidor, peça ao Codex uma prévia HTTP local.
+Esses comandos não substituem o teste visual nem comprovam entrega de mensagens nos aplicativos externos. Se o site passar a usar recursos que exigem servidor, peça ao Codex uma prévia HTTP local.
 
 ## 5. Salvar uma versão: commit
 
@@ -84,7 +84,7 @@ Peça ao Codex para identificar o commit problemático e criar um `git revert`, 
 
 ## Próximas melhorias de carreira
 
-1. Corrigir o contato: deixar explícita a simulação e destacar LinkedIn, ou integrar envio real com um serviço escolhido pelo proprietário.
+1. Conferir periodicamente os contatos diretos, a foto e as informações profissionais. Confirmar o ano de conclusão do curso de banco de dados.
 2. Escrever uma apresentação voltada à área de interesse, com fatos confirmados.
 3. Acrescentar projetos reais com problema, contribuição, tecnologias, resultado e links disponíveis.
 4. Publicar um currículo revisado, com somente os dados que devem ser públicos.

@@ -10,7 +10,7 @@ Portfólio de carreira em HTML, CSS e JavaScript, hospedado no GitHub Pages.
 
 - `index.html`: textos, seções, projetos e links.
 - `estilo.css`: cores, tamanhos e adaptação para celular.
-- `script.js`: tema, ano do rodapé e validação do formulário.
+- `script.js`: tema com preferência salva, ano do rodapé e situação do estágio conforme a data.
 - `AGENTS.md`: orientações para o Codex trabalhar neste projeto.
 - `MANUTENCAO.md`: roteiro de atualização e publicação.
 
@@ -20,6 +20,10 @@ Abra esta pasta como projeto local no Codex. Para visualizar o site, abra `index
 
 Leia [o guia de manutenção](MANUTENCAO.md) antes de publicar alterações.
 
-## Situação do contato
+## Contato direto
 
-O formulário atual é uma demonstração acadêmica: valida campos e mostra uma mensagem, mas **não envia mensagens**. Para contato real, use o link do LinkedIn disponível no site. A integração de envio ainda precisa ser implementada; a mensagem de sucesso atual não comprova entrega.
+O formulário de demonstração foi removido. O site oferece e-mail (mailto), WhatsApp, LinkedIn, GitHub e Instagram. O visitante escreve e envia a mensagem no aplicativo escolhido; o site não coleta mensagens nem simula entrega.
+
+## Foto e apresentação
+
+A foto autorizada está em `assets/gabriel-antunes.jpeg`. O layout adapta-se a celulares e oferece temas claro e escuro. A trajetória inclui SERPRO (início em 01/10/2026), QuadraImob e formação em dados. O ano de conclusão do curso de banco de dados ainda deve ser confirmado; por enquanto, consta apenas 20 de janeiro.

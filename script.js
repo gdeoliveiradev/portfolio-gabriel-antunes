@@ -1,128 +1,27 @@
-// ==========================================
-// ANO AUTOMÁTICO DO RODAPÉ
-// ==========================================
-
-const anoAtual = document.getElementById("anoAtual");
-
+// O site funciona sem JavaScript; aqui ficam apenas melhorias de apresentação.
+const anoAtual = document.getElementById('anoAtual');
 anoAtual.textContent = new Date().getFullYear();
 
-
-// ==========================================
-// ALTERAÇÃO ENTRE TEMA CLARO E ESCURO
-// ==========================================
-
-const botaoTema = document.getElementById("botaoTema");
-
-botaoTema.addEventListener("click", function () {
-
-    document.body.classList.toggle("tema-escuro");
-
-    // Modifica o texto do botão conforme o tema atual
-    if (document.body.classList.contains("tema-escuro")) {
-
-        botaoTema.textContent = "Tema claro";
-
-    } else {
-
-        botaoTema.textContent = "Tema escuro";
-
-    }
-
-});
-
-
-// ==========================================
-// VALIDAÇÃO DO FORMULÁRIO DE CONTATO
-// ==========================================
-
-const formulario = document.getElementById("formContato");
-
-const nome = document.getElementById("nome");
-const email = document.getElementById("email");
-const mensagem = document.getElementById("mensagem");
-
-const erroNome = document.getElementById("erroNome");
-const erroEmail = document.getElementById("erroEmail");
-const erroMensagem = document.getElementById("erroMensagem");
-
-const mensagemSucesso =
-    document.getElementById("mensagemSucesso");
-
-
-// Função responsável por verificar o formato do e-mail
-function emailValido(emailInformado) {
-
-    const formatoEmail =
-        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    return formatoEmail.test(emailInformado);
-
+const botaoTema = document.getElementById('botaoTema');
+function aplicarTema(escuro) {
+  document.body.classList.toggle('tema-escuro', escuro);
+  botaoTema.textContent = escuro ? 'Tema claro' : 'Tema escuro';
+  botaoTema.setAttribute('aria-pressed', String(escuro));
 }
-
-
-// Evento executado quando o formulário é enviado
-formulario.addEventListener("submit", function (evento) {
-
-    // Impede que a página seja recarregada
-    evento.preventDefault();
-
-    let formularioValido = true;
-
-    // Limpa mensagens anteriores
-    erroNome.textContent = "";
-    erroEmail.textContent = "";
-    erroMensagem.textContent = "";
-    mensagemSucesso.textContent = "";
-
-
-    // Validação do nome
-    if (nome.value.trim() === "") {
-
-        erroNome.textContent =
-            "Por favor, informe seu nome.";
-
-        formularioValido = false;
-
-    }
-
-
-    // Validação do e-mail
-    if (email.value.trim() === "") {
-
-        erroEmail.textContent =
-            "Por favor, informe seu e-mail.";
-
-        formularioValido = false;
-
-    } else if (!emailValido(email.value)) {
-
-        erroEmail.textContent =
-            "Digite um endereço de e-mail válido.";
-
-        formularioValido = false;
-
-    }
-
-
-    // Validação da mensagem
-    if (mensagem.value.trim() === "") {
-
-        erroMensagem.textContent =
-            "Por favor, escreva uma mensagem.";
-
-        formularioValido = false;
-
-    }
-
-
-    // Simulação do envio do formulário
-    if (formularioValido) {
-
-        mensagemSucesso.textContent =
-            "Mensagem enviada com sucesso!";
-
-        formulario.reset();
-
-    }
-
+let temaSalvo = null;
+try { temaSalvo = localStorage.getItem('portfolio-tema'); } catch { /* Armazenamento pode estar indisponível. */ }
+aplicarTema(temaSalvo === 'escuro');
+botaoTema.hidden = false;
+botaoTema.addEventListener('click', () => {
+  const escuro = !document.body.classList.contains('tema-escuro');
+  aplicarTema(escuro);
+  try { localStorage.setItem('portfolio-tema', escuro ? 'escuro' : 'claro'); } catch { /* O tema continua funcionando nesta página. */ }
 });
+
+// Evita apresentar o estágio como já iniciado antes da data informada.
+const hojeEmBrasilia = new Intl.DateTimeFormat('sv-SE', {
+  timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(new Date());
+if (hojeEmBrasilia >= '2026-10-01') {
+  document.getElementById('statusSerpro').textContent = 'Atuação atual · desde 01/10/2026';
+}
