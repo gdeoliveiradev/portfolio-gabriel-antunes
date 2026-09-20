@@ -27,3 +27,7 @@ O formulário de demonstração foi removido. O site oferece e-mail (mailto), Wh
 ## Foto e apresentação
 
 A foto autorizada está em `assets/gabriel-antunes.jpeg`. O layout adapta-se a celulares e oferece temas claro e escuro. A trajetória inclui SERPRO (início em 01/10/2026), QuadraImob e formação em dados. O ano de conclusão do curso de banco de dados ainda deve ser confirmado; por enquanto, consta apenas 20 de janeiro.
+
+## Galeria Conexão Tech
+
+Três fotografias das oficinas estão em `assets/conexao-tech/`, com legendas e abertura da imagem inteira em nova aba. As fotos usam carregamento sob demanda. Os arquivos originais da pasta do projeto foram preservados.

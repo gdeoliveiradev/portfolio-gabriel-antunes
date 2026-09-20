@@ -10,3 +10,63 @@ body.tema-escuro{color-scheme:dark;--fundo:#132322;--alternativo:#182c2a;--super
 @media(max-width:1050px){.container{width:calc(100% - 56px)}.nav-links{gap:16px}.hero{gap:35px}.retrato img{height:550px}.sobre-grid{gap:45px}.experiencia{gap:30px}.contato{gap:35px}.projeto-visual{padding:30px}}
 @media(max-width:760px){html{scroll-padding-top:140px}.container{width:calc(100% - 40px)}.navegacao{flex-wrap:wrap;gap:14px;padding-block:16px}.marca{font-size:1.8rem}.nav-links{order:3;width:100%;justify-content:space-between;gap:8px;font-size:.68rem}.tema{font-size:.67rem;padding:6px 12px}.hero{grid-template-columns:1fr;padding-block:40px;gap:32px}h1{font-size:4.9rem}.hero .eyebrow{font-size:.59rem;margin-bottom:28px}.hero-subtitulo{font-size:1.8rem}.hero-descricao{max-width:100%}.hero-nota{margin-top:26px}.retrato{border-top-left-radius:110px;max-width:480px;width:100%;justify-self:center}.retrato img{height:auto;aspect-ratio:4/4.5;object-fit:cover;object-position:center 48%}.faixa-conteudo{font-size:.57rem;gap:10px;flex-wrap:wrap;justify-content:center;text-align:center}.faixa-conteudo span[aria-hidden]{font-size:.8rem}.secao{padding-block:60px}.sobre-grid,.formacao-grid,.aprendizado-grid,.contato,.projeto{grid-template-columns:1fr;gap:28px}.cabecalho-secao{align-items:flex-start;flex-direction:column;gap:20px;margin-bottom:30px}.cabecalho-secao>p{max-width:100%}.experiencia{grid-template-columns:1fr;gap:20px;position:relative}.indice{position:absolute;right:0;top:36px}.empresa{font-size:1.5rem}.empresa span{margin-top:3px}.card{padding:25px}.aprendizado-grid{margin-top:35px;gap:35px}.projeto{gap:0}.projeto-visual{min-height:280px;padding:32px}.projeto-visual>span{font-size:3.7rem}.projeto-texto{padding:27px}.contato h2{font-size:2.35rem}.canal strong{font-size:.93rem}.rodape{flex-wrap:wrap;gap:18px}.rodape p{flex-basis:calc(100% - 70px)}.acoes{gap:20px}.botao{padding:13px 16px;font-size:.75rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Registros fotográficos do projeto Conexão Tech. */
+.registros-projeto {
+  margin-top: 48px;
+}
+.registros-cabecalho {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+.registros-cabecalho .rotulo { margin-bottom: 10px; }
+.registros-cabecalho > p {
+  max-width: 300px;
+  margin: 0;
+  font-size: .82rem;
+  color: var(--suave);
+}
+.galeria-tech {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.galeria-tech figure {
+  margin: 0;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.galeria-tech a { display: block; position: relative; }
+.galeria-tech a:focus-visible { outline-offset: -4px; }
+.galeria-tech img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.ampliar-foto {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #142b2bed;
+  color: #fff;
+  font-size: .68rem;
+}
+.galeria-tech a:hover .ampliar-foto { background: #142b2b; text-decoration: underline; }
+.galeria-tech figcaption { padding: 20px; }
+.galeria-tech figcaption strong { display: block; font-size: .88rem; line-height: 1.4; }
+.galeria-tech figcaption > span { display: block; margin-top: 8px; color: var(--suave); font-size: .78rem; }
+@media (max-width: 760px) {
+  .registros-projeto { margin-top: 36px; }
+  .registros-cabecalho { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .galeria-tech { grid-template-columns: 1fr; }
+  .galeria-tech img { aspect-ratio: 4 / 3; }
+}
