@@ -31,3 +31,7 @@ A foto autorizada está em `assets/gabriel-antunes.jpeg`. O layout adapta-se a c
 ## Galeria Conexão Tech
 
 Três fotografias das oficinas estão em `assets/conexao-tech/`, com legendas e abertura da imagem inteira em nova aba. As fotos usam carregamento sob demanda. Os arquivos originais da pasta do projeto foram preservados.
+
+## Conteúdo bilíngue
+
+Português e inglês aparecem juntos na mesma página. As traduções usam `lang="en"` e a classe `traducao`. O tema inicial é escuro; a preferência escolhida pelo visitante é preservada. Tecnologias e trilhas são apresentadas como estudos em andamento, e certificações como preparação. Preserve as duas versões ao atualizar o conteúdo e o status do SERPRO.

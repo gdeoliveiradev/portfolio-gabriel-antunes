@@ -70,3 +70,49 @@ body.tema-escuro{color-scheme:dark;--fundo:#132322;--alternativo:#182c2a;--super
   .galeria-tech { grid-template-columns: 1fr; }
   .galeria-tech img { aspect-ratio: 4 / 3; }
 }
+
+/* Hierarquia bilíngue: português em destaque e inglês logo abaixo. */
+.traducao {
+  display: block;
+  margin-top: .5em;
+  color: var(--suave);
+  font-size: .88em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-transform: none;
+}
+h2 .traducao { font-size: .46em; margin-top: .7em; }
+h3 .traducao { font-size: .73em; margin-top: .65em; }
+.hero-subtitulo .traducao { font-size: .62em; }
+.eyebrow .traducao, .rotulo .traducao { font-size: .95em; }
+.nav-links .traducao { margin-top: 1px; font-size: .9em; }
+.nav-links { gap: 20px; }
+.tema { white-space: normal; max-width: 160px; }
+.botao .traducao { color: inherit; font-size: .86em; margin-top: 3px; }
+.retrato .traducao { color: #e0e8df; }
+.faixa .traducao { color: #bdcbbd; }
+.faixa-conteudo > span { min-width: 0; }
+.tags .tag-en { border: 0; padding: 0; font-size: inherit; font-style: italic; }
+.hero-nota .foco-tecnologias { display: block; margin-top: 12px; color: var(--suave); line-height: 1.9; }
+.card-infinity { grid-column: 1 / -1; border-left: 3px solid var(--acento); }
+.card-infinity h3 { max-width: 900px; }
+.hero { align-items: start; }
+.registros-cabecalho h3 { max-width: 650px; }
+.empresa > span .traducao { margin-top: 5px; }
+.rodape { flex-wrap: wrap; }
+@media (max-width: 1050px) {
+  .hero { gap: 30px; }
+  .nav-links { gap: 12px; }
+  .navegacao { gap: 16px; }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 155px; }
+  .nav-links { gap: 6px; }
+  .nav-links .traducao { font-size: .84em; }
+  .faixa-conteudo { align-items: flex-start; }
+  .faixa-conteudo > span:not([aria-hidden]) { flex: 1; }
+  .card-infinity { grid-column: auto; }
+  .hero .eyebrow { line-height: 1.7; }
+}

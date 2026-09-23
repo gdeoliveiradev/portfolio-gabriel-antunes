@@ -14,103 +14,109 @@
   <link rel="stylesheet" href="estilo.css">
   <script src="script.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<body class="tema-escuro">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo / Skip to content</a>
   <header class="cabecalho">
     <nav class="container navegacao" aria-label="Navegação principal">
       <a class="marca" href="#inicio" aria-label="Gabriel Antunes, início">ga<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#portfolio">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre<span class="traducao" lang="en">About</span></a></li>
+        <li><a href="#experiencia">Experiência<span class="traducao" lang="en">Experience</span></a></li>
+        <li><a href="#formacao">Formação<span class="traducao" lang="en">Education</span></a></li>
+        <li><a href="#portfolio">Projetos<span class="traducao" lang="en">Projects</span></a></li>
+        <li><a href="#contato">Contato<span class="traducao" lang="en">Contact</span></a></li>
       </ul>
-      <button class="tema" id="botaoTema" type="button" aria-pressed="false" hidden>Tema escuro</button>
+      <button class="tema" id="botaoTema" type="button" aria-pressed="false" hidden>Tema claro / Light mode</button>
     </nav>
   </header>
   <main id="conteudo">
     <section class="hero container" id="inicio" aria-labelledby="titulo">
       <div class="hero-texto">
-        <p class="eyebrow"><span class="ponto" aria-hidden="true"></span> Brasília, Brasil · Portfólio profissional</p>
+        <p class="eyebrow"><span class="ponto" aria-hidden="true"></span> Brasília, Brasil · Portfólio profissional / Professional portfolio</p>
         <h1 id="titulo">Gabriel<br>Antunes<span class="acento">.</span></h1>
-        <p class="hero-subtitulo">Tecnologia, dados<br>e visão de negócio.</p>
-        <p class="hero-descricao">Conecto minha experiência com pessoas e operações à formação em tecnologia. Em desenvolvimento na área de dados, com curiosidade para aprender e construir soluções úteis.</p>
+        <p class="hero-subtitulo">Tecnologia, dados<br>e visão de negócio.<span class="traducao" lang="en">Technology, data & business insight.</span></p>
+        <p class="hero-descricao">Conecto minha experiência com pessoas e operações à formação em tecnologia. Em desenvolvimento na área de dados, com curiosidade para aprender e construir soluções úteis.<span class="traducao" lang="en">I bring experience in people-facing roles and operations to my technology studies. I am developing my skills in data, driven by curiosity and a desire to build useful solutions.</span></p>
         <div class="acoes">
-          <a class="botao" href="#portfolio">Conheça meus projetos <span aria-hidden="true">↗</span></a>
-          <a class="link-texto" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+          <a class="botao" href="#portfolio"><span>Conheça meus projetos<span class="traducao" lang="en">Explore my projects</span></span><span aria-hidden="true">↗</span></a>
+          <a class="link-texto" href="#contato">Vamos conversar / <span lang="en">Let’s connect</span> <span aria-hidden="true">→</span></a>
         </div>
-        <div class="hero-nota"><span>FOCO DE ESTUDO</span><p>Engenharia de dados · SQL · Python · Azure</p></div>
+        <div class="hero-nota"><span>FOCO DE ESTUDO / STUDY FOCUS</span><p>Engenharia de dados & Big Data<span class="traducao" lang="en">Data Engineering & Big Data</span><span class="foco-tecnologias">SQL · Python · Apache Spark · Databricks · dbt · Docker · Microsoft Fabric (DP-700) · Google BigQuery</span></p></div>
       </div>
       <figure class="retrato">
         <img src="assets/gabriel-antunes.jpeg" alt="Gabriel Antunes de Oliveira, de terno azul, sentado à mesa na QuadraImob." width="960" height="1280" fetchpriority="high">
-        <figcaption><span>GABRIEL ANTUNES DE OLIVEIRA</span><span>Pessoas. Tecnologia. Possibilidades.</span></figcaption>
+        <figcaption><span>GABRIEL ANTUNES DE OLIVEIRA</span><span>Pessoas. Tecnologia. Possibilidades.<span class="traducao" lang="en">People. Technology. Possibilities.</span></span></figcaption>
       </figure>
     </section>
-    <div class="faixa"><div class="container faixa-conteudo"><span>Formação em ADS</span><span aria-hidden="true">✳</span><span>Engenharia de dados em estudo</span><span aria-hidden="true">✳</span><span>Experiência em negócios</span></div></div>
+    <div class="faixa"><div class="container faixa-conteudo"><span>Formação em ADS<span class="traducao" lang="en">Systems Analysis & Development</span></span><span aria-hidden="true">✳</span><span>Engenharia de dados em estudo<span class="traducao" lang="en">Studying Data Engineering</span></span><span aria-hidden="true">✳</span><span>Experiência em negócios<span class="traducao" lang="en">Business experience</span></span></div></div>
 
     <section class="secao container sobre-grid" id="sobre" aria-labelledby="titulo-sobre">
-      <div><p class="eyebrow">01 / Sobre mim</p><h2 id="titulo-sobre">Uma trajetória.<br>Múltiplas perspectivas.</h2></div>
+      <div><p class="eyebrow">01 / Sobre mim<span class="traducao" lang="en">About Me</span></p><h2 id="titulo-sobre">Uma trajetória.<br>Múltiplas perspectivas.<span class="traducao" lang="en">One journey. Multiple perspectives.</span></h2></div>
       <div class="sobre-texto">
-        <p class="texto-grande">Sou Gabriel Antunes de Oliveira. Minha carreira reúne atendimento, administração, gestão e rotinas operacionais — experiências que hoje levo para a tecnologia.</p>
-        <p>Atuei em farmácia, ambiente hospitalar, setor público e gestão de estabelecimentos. Nesse caminho, desenvolvi comunicação, organização, responsabilidade e capacidade de resolver problemas e aprender novos sistemas.</p>
-        <p>Sou Técnico em Transações Imobiliárias e estudante de Análise e Desenvolvimento de Sistemas na UNINTER. Atuo no mercado imobiliário e aprofundo meus estudos em bancos de dados e engenharia de dados, aproximando a compreensão do negócio das soluções digitais.</p>
-        <p>Fora do trabalho, valorizo minha família, minha fé e o aprendizado contínuo. Gosto de conhecer lugares novos, acompanhar futebol e assistir a séries e filmes.</p>
-        <div class="tags" aria-label="Competências desenvolvidas na trajetória"><span>Comunicação</span><span>Organização</span><span>Resolução de problemas</span><span>Aprendizado contínuo</span></div>
+        <p class="texto-grande">Sou Gabriel Antunes de Oliveira. Minha carreira reúne atendimento, administração, gestão e rotinas operacionais — experiências que hoje levo para a tecnologia.<span class="traducao" lang="en">I am Gabriel Antunes de Oliveira. My background spans customer service, administration, management and operations — experience I now bring to technology.</span></p>
+        <p>Atuei em farmácia, ambiente hospitalar, setor público e gestão de estabelecimentos. Nesse caminho, desenvolvi comunicação, organização, responsabilidade e capacidade de resolver problemas e aprender novos sistemas.<span class="traducao" lang="en">I have worked in pharmacy, healthcare, the public sector and business management. These roles strengthened my communication, organization, accountability, problem-solving and ability to learn new systems.</span></p>
+        <p>Sou Técnico em Transações Imobiliárias e estudante de Análise e Desenvolvimento de Sistemas na UNINTER. Atuo no mercado imobiliário e aprofundo meus estudos em bancos de dados e engenharia de dados, aproximando a compreensão do negócio das soluções digitais.<span class="traducao" lang="en">I hold a technical qualification in Real Estate Transactions and study Systems Analysis and Development at UNINTER. Alongside my real estate work, I am advancing my studies in databases and data engineering, connecting business understanding with digital solutions.</span></p>
+        <p>Fora do trabalho, valorizo minha família, minha fé e o aprendizado contínuo. Gosto de conhecer lugares novos, acompanhar futebol e assistir a séries e filmes.<span class="traducao" lang="en">Outside work, I value family, faith and lifelong learning. I enjoy exploring new places, football, films and series.</span></p>
+        <div class="tags" aria-label="Competências desenvolvidas na trajetória"><span>Comunicação / <span lang="en" class="tag-en">Communication</span></span><span>Organização / <span lang="en" class="tag-en">Organization</span></span><span>Resolução de problemas / <span lang="en" class="tag-en">Problem-solving</span></span><span>Aprendizado contínuo / <span lang="en" class="tag-en">Continuous learning</span></span></div>
       </div>
     </section>
 
     <section class="fundo-alternativo" id="experiencia" aria-labelledby="titulo-experiencia"><div class="container secao">
-      <div class="cabecalho-secao"><div><p class="eyebrow">02 / Experiência</p><h2 id="titulo-experiencia">Tecnologia encontra negócio.</h2></div><p>Minha atuação profissional e o próximo passo na área de TI.</p></div>
+      <div class="cabecalho-secao"><div><p class="eyebrow">02 / Experiência<span class="traducao" lang="en">Experience</span></p><h2 id="titulo-experiencia">Tecnologia encontra negócio.<span class="traducao" lang="en">Where technology meets business.</span></h2></div><p>Minha atuação profissional e o próximo passo na área de TI.<span class="traducao" lang="en">My professional experience and next step in technology.</span></p></div>
       <div class="experiencias">
-        <article class="experiencia"><div class="empresa">SERPRO<span>TECNOLOGIA DA INFORMAÇÃO</span></div><div><p class="status" id="statusSerpro">Contratado · início em 01/10/2026</p><h3>Estagiário em TI</h3><p>Contratação para estágio em Tecnologia da Informação, com início em <time datetime="2026-10-01">1º de outubro de 2026</time>. Um novo passo na minha trajetória profissional em tecnologia.</p></div><span class="indice" aria-hidden="true">01</span></article>
-        <article class="experiencia"><div class="empresa">QuadraImob<span>MERCADO IMOBILIÁRIO</span></div><div><p class="status">Atuação atual</p><h3>Corretor imobiliário</h3><p>Atuação no segmento de imóveis de médio e alto padrão, conectando minha formação em Transações Imobiliárias à experiência com atendimento, relacionamento e negócios.</p></div><span class="indice" aria-hidden="true">02</span></article>
+        <article class="experiencia"><div class="empresa">SERPRO<span>TECNOLOGIA DA INFORMAÇÃO<span class="traducao" lang="en">INFORMATION TECHNOLOGY</span></span></div><div><p class="status" id="statusSerpro"><span id="statusSerproPt">Contratado · início em 01/10/2026</span><span class="traducao" lang="en" id="statusSerproEn">Contract confirmed · starts October 1, 2026</span></p><h3>Estagiário em TI<span class="traducao" lang="en">Tech Intern</span></h3><p>Contratação para estágio em Tecnologia da Informação. Alocação e atividades técnicas específicas em definição junto às equipes de engenharia e operações da empresa.<span class="traducao" lang="en">Tech Intern contract. Specific technical assignment and role alignment currently underway within the enterprise engineering and operations teams.</span></p></div><span class="indice" aria-hidden="true">01</span></article>
+        <article class="experiencia"><div class="empresa">QuadraImob<span>MERCADO IMOBILIÁRIO<span class="traducao" lang="en">REAL ESTATE</span></span></div><div><p class="status">Atuação atual<span class="traducao" lang="en">Current role</span></p><h3>Corretor imobiliário<span class="traducao" lang="en">Real Estate Agent</span></h3><p>Atuação no segmento de imóveis de médio e alto padrão, conectando minha formação em Transações Imobiliárias à experiência com atendimento, relacionamento e negócios.<span class="traducao" lang="en">Working in the mid-range and high-end property market, combining my Real Estate Transactions qualification with experience in client service, relationships and business.</span></p></div><span class="indice" aria-hidden="true">02</span></article>
       </div>
     </div></section>
 
     <section class="secao container" id="formacao" aria-labelledby="titulo-formacao">
-      <div class="cabecalho-secao"><div><p class="eyebrow">03 / Formação & aprendizado</p><h2 id="titulo-formacao">Construindo uma base sólida.</h2></div><p>Formação acadêmica, trilhas de estudo e evolução contínua.</p></div>
+      <div class="cabecalho-secao"><div><p class="eyebrow">03 / Formação & aprendizado<span class="traducao" lang="en">Education & Learning</span></p><h2 id="titulo-formacao">Construindo uma base sólida.<span class="traducao" lang="en">Building a solid foundation.</span></h2></div><p>Formação acadêmica, trilhas de estudo e evolução contínua.<span class="traducao" lang="en">Academic education, learning paths and continuous development.</span></p></div>
       <div class="formacao-grid">
-        <article class="card"><p class="rotulo">GRADUAÇÃO · EM ANDAMENTO</p><h3>Análise e Desenvolvimento de Sistemas</h3><p class="instituicao">UNINTER</p><p>Formação em desenvolvimento de sistemas, programação, bancos de dados e tecnologias aplicadas.</p></article>
-        <article class="card"><p class="rotulo">CURSO · EM ANDAMENTO · 200 HORAS</p><h3>Administrador de Banco de Dados</h3><p class="instituicao">Instituto Federal do Rio Grande do Sul</p><p>Conclusão prevista em 20 de janeiro.</p><p>Conceitos de bancos de dados, SQL, prática com PostgreSQL e MySQL e administração de bancos de dados.</p></article>
-        <article class="card"><p class="rotulo">TRILHA DE ESTUDO · EM ANDAMENTO</p><h3>Engenharia de dados</h3><p><strong>Manual da Engenharia de Dados</strong><br>Walter Gonzaga</p><p><strong>Do Zero a Engenheiro de Dados — Azure</strong><br>Carlos Araujo Viana</p></article>
-        <article class="card"><p class="rotulo">FORMAÇÃO TÉCNICA · CONCLUÍDA</p><h3>Técnico em Transações Imobiliárias</h3><p>Base em mercado imobiliário, relacionamento com clientes, negociação e processos de transações imobiliárias.</p></article>
+        <article class="card card-infinity">
+          <p class="rotulo">FORMAÇÃO · EM ANDAMENTO<span class="traducao" lang="en">BOOT CAMP · IN PROGRESS</span></p>
+          <h3>Formação Infinity Big Data — Engenharia & Arquitetura de Dados<span class="traducao" lang="en">Infinity Big Data Boot Camp — Modern Data Engineering & Architecture</span></h3>
+          <p>Ecossistema Hadoop/Spark, arquitetura Lakehouse com Databricks, dbt (data build tool), containerização com Docker e data warehousing com Google BigQuery.<span class="traducao" lang="en">Hadoop/Spark ecosystem, Databricks Lakehouse architecture, dbt (data build tool), containerization with Docker and data warehousing with Google BigQuery.</span></p>
+          <p>Preparação para certificações oficiais Databricks e Microsoft Fabric (DP-700).<span class="traducao" lang="en">Preparation for official Databricks and Microsoft Fabric (DP-700) certifications.</span></p>
+        </article>
+        <article class="card"><p class="rotulo">GRADUAÇÃO · EM ANDAMENTO<span class="traducao" lang="en">DEGREE · IN PROGRESS</span></p><h3>Análise e Desenvolvimento de Sistemas<span class="traducao" lang="en">Systems Analysis and Development</span></h3><p class="instituicao">UNINTER</p><p>Formação em desenvolvimento de sistemas, programação, bancos de dados e tecnologias aplicadas.<span class="traducao" lang="en">Studies in systems development, programming, databases and applied technologies.</span></p></article>
+        <article class="card"><p class="rotulo">CURSO · EM ANDAMENTO · 200 HORAS<span class="traducao" lang="en">COURSE · IN PROGRESS · 200 HOURS</span></p><h3>Administrador de Banco de Dados<span class="traducao" lang="en">Database Administrator</span></h3><p class="instituicao">Instituto Federal do Rio Grande do Sul</p><p>Conclusão prevista em 20 de janeiro.<span class="traducao" lang="en">Expected completion: January 20.</span></p><p>Conceitos de bancos de dados, SQL, prática com PostgreSQL e MySQL e administração de bancos de dados.<span class="traducao" lang="en">Database concepts, SQL, hands-on PostgreSQL and MySQL, and database administration.</span></p></article>
+        <article class="card"><p class="rotulo">TRILHA DE ESTUDO · EM ANDAMENTO<span class="traducao" lang="en">LEARNING PATH · IN PROGRESS</span></p><h3>Engenharia de dados<span class="traducao" lang="en">Data Engineering</span></h3><p><strong>Manual da Engenharia de Dados</strong><br>Walter Gonzaga</p></article>
+        <article class="card"><p class="rotulo">FORMAÇÃO TÉCNICA · CONCLUÍDA<span class="traducao" lang="en">TECHNICAL QUALIFICATION · COMPLETED</span></p><h3>Técnico em Transações Imobiliárias<span class="traducao" lang="en">Technical Qualification in Real Estate Transactions</span></h3><p>Base em mercado imobiliário, relacionamento com clientes, negociação e processos de transações imobiliárias.<span class="traducao" lang="en">Foundation in real estate, client relationships, negotiation and property transaction processes.</span></p></article>
       </div>
       <div class="aprendizado-grid">
-        <div><h3>Cursos complementares</h3><ul class="lista-cursos"><li><strong>Excel Básico ao Avançado</strong><span>Santander Open Academy</span></li><li><strong>Prompting Responsável: Maximizar a IA no seu negócio</strong><span>Santander Open Academy</span></li><li><strong>Automação de Sistemas</strong><span>Instituto Federal do Rio Grande do Sul</span></li></ul></div>
-        <div><h3>Conhecimentos em desenvolvimento</h3><div class="tags"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Azure</span><span>Excel</span><span>Power BI</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3 class="idiomas-titulo">Idiomas</h3><p><strong>Inglês:</strong> básico, em estudo técnico e funcional para o dia a dia e futuras rotinas internacionais.</p><p><strong>Espanhol:</strong> intermediário.</p></div>
+        <div><h3>Cursos complementares<span class="traducao" lang="en">Additional Courses</span></h3><ul class="lista-cursos"><li><strong>Excel Básico ao Avançado<span class="traducao" lang="en">Excel: Basic to Advanced</span></strong><span>Santander Open Academy</span></li><li><strong>Prompting Responsável: Maximizar a IA no seu negócio<span class="traducao" lang="en">Responsible Prompting: Maximizing AI in Business</span></strong><span>Santander Open Academy</span></li><li><strong>Automação de Sistemas<span class="traducao" lang="en">Systems Automation</span></strong><span>Instituto Federal do Rio Grande do Sul</span></li></ul></div>
+        <div><h3>Conhecimentos em desenvolvimento<span class="traducao" lang="en">Technical Skills in Development</span></h3><div class="tags"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Azure</span><span>Apache Spark</span><span>Databricks</span><span>dbt</span><span>Docker</span><span>Microsoft Fabric (DP-700)</span><span>Google BigQuery</span><span>Excel</span><span>Power BI</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3 class="idiomas-titulo">Idiomas<span class="traducao" lang="en">Languages</span></h3><p><strong>Inglês:</strong> Básico, em estudo focado em rotinas técnicas, documentação e comunicação para o mercado internacional de TI.<span class="traducao" lang="en">English: Basic, actively advancing technical and functional fluency for international tech routines.</span></p><p><strong>Espanhol:</strong> intermediário.<span class="traducao" lang="en">Spanish: Intermediate.</span></p></div>
       </div>
     </section>
 
     <section class="fundo-alternativo" id="portfolio" aria-labelledby="titulo-projetos"><div class="container secao">
-      <div class="cabecalho-secao"><div><p class="eyebrow">04 / Portfólio</p><h2 id="titulo-projetos">Conhecimento em prática.</h2></div><a class="link-texto" href="https://github.com/gdeoliveiradev" target="_blank" rel="noopener noreferrer">Explorar meu GitHub ↗</a></div>
-      <article class="projeto"><div class="projeto-visual" aria-hidden="true"><span>CONEXÃO<br>TECH<span class="acento">.</span></span><div class="projeto-local">SÃO BORJA / INCLUSÃO DIGITAL</div></div><div class="projeto-texto"><p class="rotulo">PROJETO EXTENSIONISTA</p><h3>Conexão Tech São Borja</h3><p>Inclusão digital com estudantes da rede pública, aproximando a tecnologia de quem está começando.</p><dl><dt>Minha contribuição</dt><dd>Planejamento e execução de oficinas sobre Inteligência Artificial, Segurança Digital e Programação, com atividades práticas em laboratório de informática.</dd><dt>Desdobramentos</dt><dd>A iniciativa despertou interesse em novas turmas e cursos técnicos e gerou convites de outras escolas para futuras edições.</dd></dl><div class="tags"><span>Educação</span><span>Tecnologia</span><span>Impacto social</span></div></div></article>
+      <div class="cabecalho-secao"><div><p class="eyebrow">04 / Portfólio<span class="traducao" lang="en">Portfolio</span></p><h2 id="titulo-projetos">Conhecimento em prática.<span class="traducao" lang="en">Knowledge in practice.</span></h2></div><a class="link-texto" href="https://github.com/gdeoliveiradev" target="_blank" rel="noopener noreferrer">Explorar meu GitHub / <span lang="en">Explore my GitHub</span> ↗</a></div>
+      <article class="projeto"><div class="projeto-visual" aria-hidden="true"><span>CONEXÃO<br>TECH<span class="acento">.</span></span><div class="projeto-local">SÃO BORJA / INCLUSÃO DIGITAL / DIGITAL INCLUSION</div></div><div class="projeto-texto"><p class="rotulo">PROJETO EXTENSIONISTA<span class="traducao" lang="en">COMMUNITY OUTREACH PROJECT</span></p><h3>Conexão Tech São Borja</h3><p>Inclusão digital com estudantes da rede pública, aproximando a tecnologia de quem está começando.<span class="traducao" lang="en">Digital inclusion for public-school students, making technology more accessible to beginners.</span></p><dl><dt>Minha contribuição<span class="traducao" lang="en">My contribution</span></dt><dd>Planejamento e execução de oficinas sobre Inteligência Artificial, Segurança Digital e Programação, com atividades práticas em laboratório de informática.<span class="traducao" lang="en">Planning and delivering workshops on Artificial Intelligence, Digital Safety and Programming, with hands-on activities in a computer lab.</span></dd><dt>Desdobramentos<span class="traducao" lang="en">Outcomes</span></dt><dd>A iniciativa despertou interesse em novas turmas e cursos técnicos e gerou convites de outras escolas para futuras edições.<span class="traducao" lang="en">The initiative sparked interest in reaching more classes and technical courses and led to invitations from other schools for future editions.</span></dd></dl><div class="tags"><span>Educação / <span lang="en" class="tag-en">Education</span></span><span>Tecnologia / <span lang="en" class="tag-en">Technology</span></span><span>Impacto social / <span lang="en" class="tag-en">Social impact</span></span></div></div></article>
       <section class="registros-projeto" aria-labelledby="titulo-registros">
         <div class="registros-cabecalho">
-          <div><p class="rotulo">CONEXÃO TECH EM IMAGENS</p><h3 id="titulo-registros">Da preparação à troca de conhecimento.</h3></div>
-          <p>Registros das oficinas em São Borja. Selecione uma foto para vê-la inteira.</p>
+          <div><p class="rotulo">CONEXÃO TECH EM IMAGENS<span class="traducao" lang="en">CONEXÃO TECH IN PICTURES</span></p><h3 id="titulo-registros">Da preparação à troca de conhecimento.<span class="traducao" lang="en">From preparation to knowledge sharing.</span></h3></div>
+          <p>Registros das oficinas em São Borja. Selecione uma foto para vê-la inteira.<span class="traducao" lang="en">Workshop moments in São Borja. Select a photo to view the full image.</span></p>
         </div>
         <div class="galeria-tech">
           <figure>
             <a href="assets/conexao-tech/oficina-programacao.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir foto completa: explicação de programação (nova aba)">
               <img src="assets/conexao-tech/oficina-programacao.jpeg" alt="Apresentação de conceitos de programação diante de uma projeção com exemplo de código, com participante de costas em primeiro plano." width="1200" height="1600" loading="lazy" decoding="async">
-              <span class="ampliar-foto" aria-hidden="true">Ver foto ↗</span>
+              <span class="ampliar-foto" aria-hidden="true">Ver foto / View ↗</span>
             </a>
-            <figcaption><strong>Programação de um jeito acessível</strong><span>Uma introdução a como os computadores executam instruções.</span></figcaption>
+            <figcaption><strong>Programação de um jeito acessível<span class="traducao" lang="en">Making programming accessible</span></strong><span>Uma introdução a como os computadores executam instruções.<span class="traducao" lang="en">An introduction to how computers execute instructions.</span></span></figcaption>
           </figure>
           <figure>
             <a href="assets/conexao-tech/tecnologia-no-cotidiano.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir foto completa: tecnologia no cotidiano (nova aba)">
               <img src="assets/conexao-tech/tecnologia-no-cotidiano.jpeg" alt="Apresentação em sala sobre o uso da tecnologia no cotidiano, com estudantes acompanhando a oficina." width="1200" height="1600" loading="lazy" decoding="async">
-              <span class="ampliar-foto" aria-hidden="true">Ver foto ↗</span>
+              <span class="ampliar-foto" aria-hidden="true">Ver foto / View ↗</span>
             </a>
-            <figcaption><strong>Tecnologia conectada ao cotidiano</strong><span>Uma conversa sobre as ferramentas digitais que fazem parte do dia a dia.</span></figcaption>
+            <figcaption><strong>Tecnologia conectada ao cotidiano<span class="traducao" lang="en">Technology in everyday life</span></strong><span>Uma conversa sobre as ferramentas digitais que fazem parte do dia a dia.<span class="traducao" lang="en">A conversation about the digital tools we use every day.</span></span></figcaption>
           </figure>
           <figure>
             <a href="assets/conexao-tech/preparacao-sala.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir foto completa: preparação da sala (nova aba)">
               <img src="assets/conexao-tech/preparacao-sala.jpeg" alt="Sala preparada para a oficina, com notebooks distribuídos nas mesas e projetor ligado." width="1600" height="1200" loading="lazy" decoding="async">
-              <span class="ampliar-foto" aria-hidden="true">Ver foto ↗</span>
+              <span class="ampliar-foto" aria-hidden="true">Ver foto / View ↗</span>
             </a>
-            <figcaption><strong>Preparação para aprender na prática</strong><span>Organização dos computadores e do espaço para receber a turma.</span></figcaption>
+            <figcaption><strong>Preparação para aprender na prática<span class="traducao" lang="en">Preparing for hands-on learning</span></strong><span>Organização dos computadores e do espaço para receber a turma.<span class="traducao" lang="en">Setting up the computers and classroom for the students.</span></span></figcaption>
           </figure>
         </div>
       </section>
@@ -118,10 +124,10 @@
     </div></section>
 
     <section class="secao container contato" id="contato" aria-labelledby="titulo-contato">
-      <div><p class="eyebrow">05 / Contato</p><h2 id="titulo-contato">Boas conexões<br>abrem possibilidades<span class="acento">.</span></h2><p>Vamos conversar sobre tecnologia, projetos e oportunidades profissionais.</p></div>
-      <div class="canais"><a class="canal" href="mailto:gabrieldeoliveiradev@gmail.com"><span><span class="rotulo">E-MAIL</span><strong>gabrieldeoliveiradev@gmail.com</strong></span><span aria-hidden="true">↗</span></a><a class="canal" href="https://wa.me/5561984505306" target="_blank" rel="noopener noreferrer"><span><span class="rotulo">WHATSAPP</span><strong>+55 (61) 98450-5306</strong></span><span aria-hidden="true">↗</span></a><p class="contato-nota">O e-mail abre seu aplicativo de correio; o WhatsApp abre uma conversa. Você escreve e envia a mensagem pelo canal escolhido.</p><div class="redes" aria-label="Redes profissionais"><a href="https://www.linkedin.com/in/gdeoliveiradev" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/gdeoliveiradev" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.instagram.com/gdeoliveiradev/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
+      <div><p class="eyebrow">05 / Contato<span class="traducao" lang="en">Contact</span></p><h2 id="titulo-contato">Boas conexões<br>abrem possibilidades<span class="acento">.</span><span class="traducao" lang="en">Good connections open new possibilities.</span></h2><p>Vamos conversar sobre tecnologia, projetos e oportunidades profissionais.<span class="traducao" lang="en">Let’s talk about technology, projects and professional opportunities.</span></p></div>
+      <div class="canais"><a class="canal" href="mailto:gabrieldeoliveiradev@gmail.com"><span><span class="rotulo">E-MAIL</span><strong>gabrieldeoliveiradev@gmail.com</strong></span><span aria-hidden="true">↗</span></a><a class="canal" href="https://wa.me/5561984505306" target="_blank" rel="noopener noreferrer"><span><span class="rotulo">WHATSAPP</span><strong>+55 (61) 98450-5306</strong></span><span aria-hidden="true">↗</span></a><p class="contato-nota">O e-mail abre seu aplicativo de correio; o WhatsApp abre uma conversa. Você escreve e envia a mensagem pelo canal escolhido.<span class="traducao" lang="en">Email opens your mail app; WhatsApp opens a conversation. Write and send your message through your preferred channel.</span></p><div class="redes" aria-label="Redes profissionais"><a href="https://www.linkedin.com/in/gdeoliveiradev" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/gdeoliveiradev" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.instagram.com/gdeoliveiradev/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
     </section>
   </main>
-  <footer><div class="container rodape"><a class="marca" href="#inicio" aria-label="Voltar ao início">ga<span>.</span></a><p>© <span id="anoAtual">2026</span> Gabriel Antunes de Oliveira</p><span>Brasília, Brasil</span><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+  <footer><div class="container rodape"><a class="marca" href="#inicio" aria-label="Voltar ao início">ga<span>.</span></a><p>© <span id="anoAtual">2026</span> Gabriel Antunes de Oliveira</p><span>Brasília, Brasil / Brazil</span><a href="#inicio">Voltar ao topo / <span lang="en">Back to top</span> ↑</a></div></footer>
 </body>
 </html>
