@@ -24,5 +24,5 @@ const hojeEmBrasilia = new Intl.DateTimeFormat('sv-SE', {
 }).format(new Date());
 if (hojeEmBrasilia >= '2026-10-01') {
   document.getElementById('statusSerproPt').textContent = 'Atuação atual · desde 01/10/2026';
-  document.getElementById('statusSerproEn').textContent = 'Current role · since October 1, 2026';
+  document.getElementById('statusSerproEn').textContent = '| Current role · since October 1, 2026';
 }
